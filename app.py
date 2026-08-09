@@ -41,7 +41,6 @@ def add_completed_column():
 
 @app.route("/", methods=["GET", "POST"])
 def home():
-
     conn = get_db_connection()
 
     if request.method == "POST":
@@ -65,7 +64,6 @@ def home():
 
 @app.route("/delete/<int:id>")
 def delete(id):
-
     conn = get_db_connection()
 
     conn.execute(
@@ -81,7 +79,6 @@ def delete(id):
 
 @app.route("/complete/<int:id>")
 def complete(id):
-
     conn = get_db_connection()
 
     conn.execute(
@@ -94,9 +91,9 @@ def complete(id):
 
     return redirect("/")
 
+
 @app.route("/incomplete/<int:id>")
 def incomplete(id):
-
     conn = get_db_connection()
 
     conn.execute(
@@ -109,9 +106,9 @@ def incomplete(id):
 
     return redirect("/")
 
+
 @app.route("/edit/<int:id>", methods=["GET", "POST"])
 def edit(id):
-
     conn = get_db_connection()
 
     if request.method == "POST":
@@ -140,4 +137,5 @@ def edit(id):
 if __name__ == "__main__":
     init_db()
     add_completed_column()
+
     app.run(debug=True)

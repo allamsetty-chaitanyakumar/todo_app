@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 40px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+.complete-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+.complete-btn:hover {
+    opacity: 0.8;
+}
+
+.delete-btn:hover {
+    opacity: 0.8;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.edit-btn {
+    background-color: #2196F3;
+    color: white;
+}

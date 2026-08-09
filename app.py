@@ -134,8 +134,9 @@ def edit(id):
     return render_template("edit.html", task=task)
 
 
-if __name__ == "__main__":
-    init_db()
-    add_completed_column()
+init_db()
+add_completed_column()
 
+
+if __name__ == "__main__":
     app.run(debug=True)
